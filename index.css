@@ -1,0 +1,148 @@
+ body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 15px 40px;
+}
+
+
+/* .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+     margin-left: 170%; 
+    margin-left: auto;
+}  */
+
+ .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+} 
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+
+.nav-list li a:hover {
+    background: #ff4f81;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff4f81;
+}
+
+body{
+    background-image: url(background.png);
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: #ff4f81;
+    text-align: center;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    padding: 40px;
+    gap: 60px;
+}
+
+
+.hero-image img {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ff4f81;
+    box-shadow: 0 0 25px rgba(255, 79, 129, 0.6);
+    margin-top:170px ;
+    margin-left: 5px;
+}
+
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 200px;
+    color: #ff4f81;
+}
+
+.hero-text p {
+    font-size: 25px;
+    margin-top: 45px;
+    color: #333;
+    max-width: 400px;
+    font-weight: 700;
+}
+
+/* mobile view */
+
+ @media screen and (max-width:320px){}
+
+header{
+    padding:10px;
+}
+
+
+.nav-list{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex:wrap ;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+
+
+.nav-list li a{
+    font-size:12px;
+    padding:5px 6px;
+}
+ 
+.hero-section{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    height: auto;
+}
+
+
+.hero-image img{
+    width: 200px;
+    height: 200px;
+    margin-top: 65px;
+}
+
+
+.hero-text h1{
+    font-size: 26px;
+}
+
+
+.hero-text p{
+    font-size: 14px;
+    max-width: 90%;
+    margin: auto;
+}
+ 
