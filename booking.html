@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="booking">
+        <h1>Book Appointment</h1>
+
+        <form onsubmit="book()">
+            <input type="text" placeholder="Name" required><br>
+            <input type="date" required><br>
+            <select>
+                <option>Skin Care</option>
+                <option>Hair Care</option>
+            </select><br>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</body>
+<script>
+function book() {
+    alert("Appointment Booked!");
+}
+</script>
+</html>
